@@ -1,1 +1,55 @@
-/* Denna fil skall innehålla din CSS kod */
+#wrapper {
+    display: grid;
+    grid-template-rows: 150px auto 150px 100px;
+    grid-template-columns: 2fr 1fr;
+    border: solid 1px black;
+    width: 95vw;
+    height: 100vw;
+    margin:auto;
+    grid-template-areas: 
+    'hd hd'
+    'mn as'
+    'mn as'
+    'ft ft';
+    
+
+    
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    
+    grid-area: hd;
+    background-color:lightgray;
+    border: solid 1px black;
+}
+#tourist{
+    font-size: 2rem;
+}
+
+main {
+   grid-area: mn;
+ background-color:white;
+ border: solid 1px black;
+}
+
+aside {
+   
+    grid-area: as;
+    background-color: white;
+    border: solid 1px black;
+    text-align: center;
+}
+#other{
+    
+    font-size: 25px;
+    text-align: center;
+}
+
+
+footer {
+    grid-area: ft;
+    background-color:gray;
+    border: solid 1px black;
+}
