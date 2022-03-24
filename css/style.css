@@ -23,15 +23,31 @@ header{
     grid-area: hd;
     background-color:lightgray;
     border: solid 1px black;
+    position: relative;
 }
 #tourist{
-    font-size: 2rem;
+    font-size: 3 rem;
 }
 
 main {
    grid-area: mn;
  background-color:white;
  border: solid 1px black;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+   
+
+}
+
+#boka {
+font-size: 35px;
+text-align: center;
+}
+.bokabutton {
+    border: 2px black solid;
+    height: 50px;
+    width: 300px;
 }
 
 aside {
@@ -53,3 +69,80 @@ footer {
     background-color:gray;
     border: solid 1px black;
 }
+
+aside img {
+    width: 100%;
+    
+    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    background-color: lightgray;
+    font-family: sans-serif;
+    position: absolute;
+    right: 23px;
+    
+}
+
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background-color: lightgray;
+    align-items: center;
+    width: 20%;
+}
+
+.navActive {
+    transform: translateY(100vh);
+}
+
+.navlinks li {
+list-style: none;
+}
+
+.navlinks a {
+    color:black;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.burger div {
+    display: flex;
+width: 25px;
+height: 3px;
+background-color: lightsteelblue;
+margin: 5px;
+border-radius: 10%;
+justify-content: flex-end;
+
+}
+
+
+    .toggle .line1{
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .toggle .line2{
+        opacity: 0;
+    }
+
+    .toggle .line3{
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
